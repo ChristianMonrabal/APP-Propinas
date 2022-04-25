@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,41 @@
     <!-- hoja de estilos -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- título de página -->
-    <title>Título de la página</title>
+    <title>Calculador de Propinas</title>
     <!-- ícono de pàgina -->
+    <link rel="shortcut icon" href="./img/Icono.jpg" type="image/x-icon">
     <!-- fuentes -->
     <!-- javascript -->
 </head>
+
 <body>
-<div class="row">
-    <div class="column-1">
-        <p>1</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-2">
-        <p>2</p>
-    </div>
-    <div class="column-2">
-        <p>3</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-4">
-        <p>4</p>
-    </div>
-    <div class="column-4">
-        <p>5</p>
-    </div>
-    <div class="column-4">
-        <p>6</p>
-    </div>
-    <div class="column-4">
-        <p>7</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-2">
-        <p>8</p>
-    </div>
-    <div class="column-2">
-        <p>9</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-3">
-        <p>10</p>
-    </div>
-    <div class="column-3">
-        <p>11</p>
-    </div>
-    <div class="column-3">
-        <p>12</p>
-    </div>
-</div>
+    <div class="row">
+        <div class="column-1">
+            <h1>Calculador de Propinas</h1>
+        </div>
+        <div class="column-1">
+            <p>Total de la cuenta</p>
+            <input type="number">
+        </div>
+        <div class="column-1">
+            <p>Que tal la cuenta?</p>
+            <select name="" id="Servicio">
+            <option value="">0% Horroroso</option>
+            <option value="">10% Terrible</option>
+            <option value="">30% Malo</option>
+            <option value="">50% Normal </option>
+            <option value="">70% Bueno</option>
+            <option value="">100% Excelente</option>
+        </div>
+    </select><br>
+            <div class="column-1">
+                <p>Cuantas personas van a pagar?</p>
+                </select><br>
+                <input type="number">
+                </select><br>
+                <input style="background-color: orangered; border-radius: 15%; width: 5cm; height: 1cm; margin-top: 1cm;" type="submit" value="Calcular" onclick="calcular()">
+                <p id="resultado"></p>
 
 </body>
+
 </html>
