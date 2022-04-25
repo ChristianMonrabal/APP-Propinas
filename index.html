@@ -10,37 +10,35 @@
     <!-- título de página -->
     <title>Calculador de Propinas</title>
     <!-- ícono de pàgina -->
-    <link rel="shortcut icon" href="./img/Icono.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/Icono.png" type="image/x-icon">
     <!-- fuentes -->
     <!-- javascript -->
+    <script src="./js/main.js"></script>
 </head>
 
-<body>
-    <div class="row">
+<body class="flex">
+    <div class="row bordes">
         <div class="column-1">
             <h1>Calculador de Propinas</h1>
         </div>
         <div class="column-1">
             <p>Total de la cuenta</p>
-            <input type="number">
+            <input style="width: 100%;" ;type="number" placeholder="Total de la cuenta..." id="total">
         </div>
         <div class="column-1">
             <p>Que tal la cuenta?</p>
-            <select name="" id="Servicio">
-            <option value="">0% Horroroso</option>
-            <option value="">10% Terrible</option>
-            <option value="">30% Malo</option>
-            <option value="">50% Normal </option>
-            <option value="">70% Bueno</option>
-            <option value="">100% Excelente</option>
+            <select name="" style="width: 100%;" id="servicio">
+            <option value="0">0% Horroroso</option>
+            <option value="0.5">50% Normal </option>
+            <option value="100">100% Excelente</option>
         </div>
     </select><br>
             <div class="column-1">
                 <p>Cuantas personas van a pagar?</p>
                 </select><br>
-                <input type="number">
+                <input style="width: 100%;" type="number" placeholder="Numero de personas.." id="personas">
                 </select><br>
-                <input style="background-color: orangered; border-radius: 15%; width: 5cm; height: 1cm; margin-top: 1cm;" type="submit" value="Calcular" onclick="calcular()">
+                <input style="background-color: orangered; width: 5cm; height: 1cm; margin-top: 1cm;" type="submit" value="Calcular" onclick="calcProp()">
                 <p id="resultado"></p>
 
 </body>

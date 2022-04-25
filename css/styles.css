@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=League+Spartan:wght@100&family=Nanum+Gothic&family=Quicksand:wght@700&family=Ubuntu:wght@700&display=swap');
 html {
     font-size: 16px;
 }
@@ -11,7 +12,6 @@ p {
 
 h1 {
     font-size: 3rem;
-    border: 2px solid;
 }
 
 h2 {
@@ -37,6 +37,13 @@ h6 {
 
 /**************************/
 
+.img {
+    background-image: url(../img/tablet_PNG8596.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 
 /* clases predefinidas */
 
@@ -47,6 +54,8 @@ h6 {
 
 body {
     margin: 0;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -106,6 +115,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.bordes {
+    border: 2px solid orangered;
+    border-radius: 20px;
+    padding: 2%;
 }
 
 @media only screen and (max-width: 600px) {
