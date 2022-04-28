@@ -22,15 +22,15 @@
             <h1>Calculador de Propinas</h1>
         </div>
         <div class="column-1">
-            <p>Total de la cuenta</p>
+            <p>Total de la cuenta €</p>
             <input style="width: 100%;" ;type="number" placeholder="Total de la cuenta..." id="total">
         </div>
         <div class="column-1">
             <p>Que tal la cuenta?</p>
             <select name="" style="width: 100%;" id="servicio">
             <option value="0">0% Horroroso</option>
-            <option value="0.5">50% Normal </option>
-            <option value="100">100% Excelente</option>
+            <option value="0.15">15% Normal </option>
+            <option value="0.30">30% Excelente</option>
         </div>
     </select><br>
             <div class="column-1">
@@ -39,7 +39,8 @@
                 <input style="width: 100%;" type="number" placeholder="Numero de personas.." id="personas">
                 </select><br>
                 <input style="background-color: orangered; width: 5cm; height: 1cm; margin-top: 1cm;" type="submit" value="Calcular" onclick="calcProp()">
-                <p id="resultado"></p>
+                <h5 id="respuesta"></h5>
+
 
 </body>
 
